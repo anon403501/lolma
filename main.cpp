@@ -67,7 +67,7 @@ int main()
                 cout << "what ever you see... thanks anyway" << endl;
             }
         }
-        else
+        else // if the answer != donno then the answer will be in the array
         {
             if (answer == "")
             {
