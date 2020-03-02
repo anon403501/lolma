@@ -48,8 +48,8 @@ int main()
     {
         cout << "ask me a question : " << flush;
         cin >> question;
-        GetAnswer(question);
-        if (answer == "donno")
+        GetAnswer(question); 
+        if (answer == "donno") // GetAnswer() will pass "donno" if the question isnt already in the array
         {
             cout << "i can't figure out the answer for this question" << endl;
             cout << "do you have an answer for this question (reply with yes or no) : "<< flush;
@@ -83,8 +83,6 @@ int main()
     cout << answer2[3] << endl;
     cout << question2[3] << endl;
     */
-
-    //don't touch
     cout << endl << endl;
     return 0;
 }
@@ -101,11 +99,6 @@ string GetAnswer(string ques)
             qnaExist = true;
             qnaCounter = i;
             answer = answer2[qnaCounter];
-            /*
-            cout << "answer = " << answer << endl;
-            cout << "answer2[qnaCounter] = " << answer2[qnaCounter] << endl;
-            cout << "question2[qnaCounter] = " << question2[qnaCounter] << endl;
-            */
             break;
         }
     }
@@ -113,7 +106,7 @@ string GetAnswer(string ques)
     return answer;
 }
 
-void intro()
+void intro() //nothing here... just text
 {
     cout << "Hello and welcome" << endl;
     cout << "i am your virtual assistant lolma" << endl;
